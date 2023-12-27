@@ -1,0 +1,11 @@
+.project-main {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+.project-main .project-title h2 {
+  font-weight: bolder;
+}
+.project-main .project-body {
+  margin-top: 2rem;
+  display: flex;
+}/*# sourceMappingURL=Projects.css.map */

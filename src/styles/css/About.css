@@ -1,0 +1,24 @@
+.about-main {
+  margin-top: 5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-main .about-title {
+  text-align: left;
+}
+.about-main .about-title h2 {
+  font-weight: bolder;
+}
+.about-main .about-body {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.about-main .about-skills {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.about-main .about-skills h2 {
+  font-weight: bolder;
+}/*# sourceMappingURL=About.css.map */

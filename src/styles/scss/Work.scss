@@ -1,0 +1,20 @@
+.work-main {
+  //   border: 1px solid black;
+  margin-top: 4rem;
+  padding: 1rem;
+
+  .work-title {
+    // border: 1px solid red;
+    h2 {
+      font-weight: bolder;
+    }
+  }
+
+  .work-body {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba($color: black, $alpha: 0.1);
+    // border: 1px solid blue;
+  }
+}
