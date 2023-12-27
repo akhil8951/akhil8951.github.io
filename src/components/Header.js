@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <Navbar className="header-navbar">
         <Container fluid>
-          <Navbar.Brand as={Link} to={"/"}>
+          <Navbar.Brand as={Link} to={"/portfolio"}>
             <img
               alt="Akhil"
               src={logo}
