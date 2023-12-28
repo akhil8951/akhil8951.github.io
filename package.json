@@ -1,5 +1,5 @@
 {
-  "homepage": "https://akhil8951.github.io/portfolio",
+  "homepage": "https://akhil8951.github.io",
   "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +24,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+    "react-spring": "^9.7.3",
+    "react-typing-effect": "^2.0.5",
     "react-vertical-timeline-component": "^3.6.0",
     "web-vitals": "^2.1.4"
   },

@@ -1,5 +1,7 @@
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "../styles/css/About.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
@@ -18,11 +20,9 @@ const About = () => {
             and JavaScript, coupled with expertise in React, Node.js, and
             Express.js frameworks. My commitment to continuous learning is
             evident in my current exploration of backend technologies, aiming to
-            evolve into a versatile full-stack developer. Beyond the mainstream,
-            I am enhancing my skills in technologies like Three.js, believing in
-            the power of diverse expertise in the tech landscape.
+            evolve into a versatile full-stack developer.
           </p>
-          <br />
+
           <p>
             I pride myself on being a swift learner and thrive on collaborative
             client engagements, delivering efficient, scalable, and
@@ -30,7 +30,7 @@ const About = () => {
             just a coder; I am a problem solver who navigates corporate
             complexities with a code editor, avoiding jargon overload.
           </p>
-          <br />
+
           <p>
             Whether it's diving into SDE or web development roles, I am ready to
             be your code wrangler, eager to contribute to building innovative
@@ -41,11 +41,59 @@ const About = () => {
 
         <Container className="about-skills">
           <h3>Skills: </h3>
+          <br />
+          <Container className="skills-table">
+            <Row>
+              <Col className="skills-table-col" md={2}>
+                <h5>Language:</h5>{" "}
+              </Col>
+              <Col className="skills-table-col" md={10}>
+                <h5>Java, JavaScript, Python, C#, C++ </h5>
+              </Col>
+            </Row>
 
-          <br />
-          <h5>Frontend: </h5>
-          <br />
-          <h5>Backend: </h5>
+            <Row>
+              <Col className="skills-table-col" md={2}>
+                <h5>Frontend:</h5>{" "}
+              </Col>
+              <Col className="skills-table-col" md={10}>
+                <h5>HTML5, CSS3, React.JS, XML, XAML</h5>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col className="skills-table-col" md={2}>
+                <h5>Backend:</h5>
+              </Col>
+              <Col className="skills-table-col" md={10}>
+                <h5>
+                  {" "}
+                  Node.JS, Rest API ,Django Rest Framework, .NET Framework, AWS,
+                  SQL, MySQL, Express.JS
+                </h5>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col className="skills-table-col" md={2}>
+                <h5>Web Servers:</h5>{" "}
+              </Col>
+              <Col className="skills-table-col" md={10}>
+                <h5>Apache HTTP server, Nginx server</h5>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col className="skills-table-col" md={2}>
+                <h5>Tools:</h5>{" "}
+              </Col>
+              <Col className="skills-table-col" md={10}>
+                <h5>
+                  Visual Studio, Eclipse, Postman, Microsoft SQL, Git, Github
+                </h5>
+              </Col>
+            </Row>
+          </Container>
         </Container>
       </Container>
     </>

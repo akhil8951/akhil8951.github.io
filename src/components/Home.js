@@ -1,5 +1,6 @@
 import { Container, ButtonGroup, Button } from "react-bootstrap";
 import "../styles/css/Home.css";
+import Typing from "react-typing-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -13,7 +14,9 @@ const Home = () => {
     <>
       <Container fluid className="home-main">
         <Container className="home-title">
-          <h1>Hi, I'm Full Stack Developer ! 👨‍💻</h1>
+          {/* <Typing speed={100} cursorClassName="cursor"> */}
+            <h1>Hi, I'm Full Stack Developer ! 👨‍💻</h1>
+          {/* </Typing> */}
         </Container>
         <Container className="home-subtitle">
           <h5>Akhilesh Kumbar</h5>
