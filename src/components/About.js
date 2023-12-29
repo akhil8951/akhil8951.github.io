@@ -1,9 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/css/About.css";
+import { useSpring, animated } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
+  const fadeIn = useSpring({
+    opacity: 1,
+    transform: "translateY(0)",
+    from: { opacity: 0, transform: "translateY(20px)" },
+  });
+
   return (
     <>
       <Container className="about-main">
@@ -43,56 +50,58 @@ const About = () => {
           <h3>Skills: </h3>
           <br />
           <Container className="skills-table">
-            <Row>
-              <Col className="skills-table-col" md={2}>
-                <h5>Language:</h5>{" "}
-              </Col>
-              <Col className="skills-table-col" md={10}>
-                <h5>Java, JavaScript, Python, C#, C++ </h5>
-              </Col>
-            </Row>
+            <animated.div style={fadeIn}>
+              <Row>
+                <Col className="skills-table-col" md={2}>
+                  <h5>Language:</h5>{" "}
+                </Col>
+                <Col className="skills-table-col" md={10}>
+                  <h5>Java, JavaScript, Python, C#, C++ </h5>
+                </Col>
+              </Row>
 
-            <Row>
-              <Col className="skills-table-col" md={2}>
-                <h5>Frontend:</h5>{" "}
-              </Col>
-              <Col className="skills-table-col" md={10}>
-                <h5>HTML5, CSS3, React.JS, XML, XAML</h5>
-              </Col>
-            </Row>
+              <Row>
+                <Col className="skills-table-col" md={2}>
+                  <h5>Frontend:</h5>{" "}
+                </Col>
+                <Col className="skills-table-col" md={10}>
+                  <h5>HTML5, CSS3, React.JS, XML, XAML</h5>
+                </Col>
+              </Row>
 
-            <Row>
-              <Col className="skills-table-col" md={2}>
-                <h5>Backend:</h5>
-              </Col>
-              <Col className="skills-table-col" md={10}>
-                <h5>
-                  {" "}
-                  Node.JS, Rest API ,Django Rest Framework, .NET Framework, AWS,
-                  SQL, MySQL, Express.JS
-                </h5>
-              </Col>
-            </Row>
+              <Row>
+                <Col className="skills-table-col" md={2}>
+                  <h5>Backend:</h5>
+                </Col>
+                <Col className="skills-table-col" md={10}>
+                  <h5>
+                    {" "}
+                    Node.JS, Rest API ,Django Rest Framework, .NET Framework,
+                    AWS, SQL, MySQL, Express.JS
+                  </h5>
+                </Col>
+              </Row>
 
-            <Row>
-              <Col className="skills-table-col" md={2}>
-                <h5>Web Servers:</h5>{" "}
-              </Col>
-              <Col className="skills-table-col" md={10}>
-                <h5>Apache HTTP server, Nginx server</h5>
-              </Col>
-            </Row>
+              <Row>
+                <Col className="skills-table-col" md={2}>
+                  <h5>Web Servers:</h5>{" "}
+                </Col>
+                <Col className="skills-table-col" md={10}>
+                  <h5>Apache HTTP server, Nginx server</h5>
+                </Col>
+              </Row>
 
-            <Row>
-              <Col className="skills-table-col" md={2}>
-                <h5>Tools:</h5>{" "}
-              </Col>
-              <Col className="skills-table-col" md={10}>
-                <h5>
-                  Visual Studio, Eclipse, Postman, Microsoft SQL, Git, Github
-                </h5>
-              </Col>
-            </Row>
+              <Row>
+                <Col className="skills-table-col" md={2}>
+                  <h5>Tools:</h5>{" "}
+                </Col>
+                <Col className="skills-table-col" md={10}>
+                  <h5>
+                    Visual Studio, Eclipse, Postman, Microsoft SQL, Git, Github
+                  </h5>
+                </Col>
+              </Row>
+            </animated.div>
           </Container>
         </Container>
       </Container>

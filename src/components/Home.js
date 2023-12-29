@@ -14,11 +14,11 @@ const Home = () => {
     <>
       <Container fluid className="home-main">
         <Container className="home-title">
-          {/* <Typing speed={100} cursorClassName="cursor"> */}
           <h1>Hi, I'm a Full Stack Developer ! 👨‍💻</h1>
-          {/* </Typing> */}
         </Container>
-        <Container className="home-subtitle"></Container>
+        <Container className="home-subtitle">
+          <h5>Akhilesh Kumbar</h5>
+        </Container>
         <Container className="home-connect">
           <Button
             className="social-button"
