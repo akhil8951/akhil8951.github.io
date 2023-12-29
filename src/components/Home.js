@@ -1,6 +1,6 @@
 import { Container, ButtonGroup, Button } from "react-bootstrap";
 import "../styles/css/Home.css";
-import Typing from "react-typing-effect";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -10,11 +10,23 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
+  const [text] = useTypewriter({
+    words: ["Full Stack Developer 👨🏼‍💻", "Designer 🔨", "Photographer 📸"],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
+
   return (
     <>
       <Container fluid className="home-main">
         <Container className="home-title">
-          <h1>Hi, I'm a Full Stack Developer ! 👨‍💻</h1>
+          <h1>
+            Hi, I'm a <span>{text}</span>
+            <span>
+              <Cursor />
+            </span>
+          </h1>
         </Container>
         <Container className="home-subtitle">
           <h5>Akhilesh Kumbar</h5>
