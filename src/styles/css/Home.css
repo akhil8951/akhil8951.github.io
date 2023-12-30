@@ -1,11 +1,11 @@
 .home-main {
   text-align: center;
   align-items: center;
-  height: 95vh;
   justify-content: center;
   display: flex;
   flex-direction: column;
   background-color: white;
+  min-height: 100vh;
 }
 .home-main .home-title {
   text-align: center;
