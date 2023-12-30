@@ -2,17 +2,25 @@ import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../styles/css/Header.css";
 import logo from "../assets/akhillogo.png";
+import logo1 from "../assets/akhilLogo1.png";
+import logo2 from "../assets/akhilLogo2.png";
 import { useTheme } from "./ThemeContext";
+import lightmode from "../assets/lightMode.png";
+import darkmode from "../assets/darkMode.png";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
-  console.log("Current Theme:", theme);
-
   const renderThemeButton = () => {
     if (theme === "light") {
-      return "🌑";
-    } else return "💡";
+      return darkmode;
+    } else return lightmode;
+  };
+
+  const renderLogo = () => {
+    if (theme === "light") {
+      return logo1;
+    } else return logo2;
   };
 
   return (
@@ -22,7 +30,7 @@ const Header = () => {
           <Navbar.Brand as={Link} to={"/"}>
             <img
               alt="Akhil"
-              src={logo}
+              src={renderLogo()}
               width="50"
               height="50"
               className="d-inline-block align-top"
@@ -38,7 +46,17 @@ const Header = () => {
             <Nav.Link className="nav-link" as={Link} to={"/work"}>
               Work
             </Nav.Link>
-            <Nav.Link onClick={toggleTheme}>{renderThemeButton()}</Nav.Link>
+            <Nav.Link onClick={toggleTheme}>
+              {
+                <img
+                  alt="themeButton"
+                  src={renderThemeButton()}
+                  width={20}
+                  height={20}
+                  className="d-inline-block align-top"
+                />
+              }
+            </Nav.Link>
           </Nav>
           {/* </Navbar.Collapse> */}
         </Container>
