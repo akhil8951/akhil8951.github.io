@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 95vh;
+  padding-top: 4rem;
 }
 .about-main .about-title {
   text-align: left;
@@ -13,6 +13,7 @@
 .about-main .about-body {
   margin-top: 2rem;
   padding: 1rem;
+  box-sizing: border-box;
 }
 .about-main .about-skills {
   margin-top: 2rem;
@@ -28,7 +29,7 @@
 
 .about-main.dark {
   background-color: rgb(17, 17, 17);
-  height: 95vh;
+  padding-top: 4rem;
 }
 .about-main.dark .about-title {
   text-align: left;
