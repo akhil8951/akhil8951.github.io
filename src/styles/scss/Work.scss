@@ -1,10 +1,8 @@
 .work-main {
-  //   border: 1px solid black;
-  margin-top: 4rem;
-  padding: 1rem;
+  padding-top: 4rem;
+  background-color: rgba($color: white, $alpha: 1);
 
   .work-title {
-    // border: 1px solid red;
     h2 {
       font-weight: bolder;
     }
@@ -15,6 +13,33 @@
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgba($color: black, $alpha: 0.1);
-    // border: 1px solid blue;
+  }
+}
+
+.work-main.dark {
+  background-color: rgba(17, 17, 17, 255);
+
+  .work-title {
+    h2 {
+      font-weight: bolder;
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  .work-body {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba($color: white, $alpha: 0.1);
+
+    .vertical-timeline-element-date {
+      color: rgba($color: white, $alpha: 1);
+    }
+    .vertical-timeline-element-content {
+      background: rgba($color: white, $alpha: 0.8);
+    }
   }
 }

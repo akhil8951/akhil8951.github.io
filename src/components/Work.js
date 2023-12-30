@@ -9,13 +9,18 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import WorkTwoToneIcon from "@mui/icons-material/WorkTwoTone";
 import StarIcon from "@mui/icons-material/Star";
+import { useTheme } from "./ThemeContext";
 
 import "../styles/css/Work.css";
 
 const Work = () => {
+  const { theme } = useTheme();
+
   return (
     <>
-      <Container className="work-main">
+      <Container fluid className={`work-main ${theme}`}>
+        {/* <Container className="work-main dark"> */}
+        {console.log(theme)}
         <Container className="work-title">
           <h2>Work Experience 🛠️</h2>
           <p>My career path</p>

@@ -1,6 +1,7 @@
 import { Container, Card, Button } from "react-bootstrap";
 import { useSpring, animated } from "react-spring";
 import "../styles/css/ProjectCard.css";
+import { useTheme } from "./ThemeContext";
 
 const ProjectCard = (props) => {
   const animatedProp = useSpring({
@@ -9,11 +10,15 @@ const ProjectCard = (props) => {
     from: { opacity: 0, transform: "translateY(50px)" },
     config: { duration: 300 },
   });
+  const { theme } = useTheme();
 
   return (
     <>
       <animated.div style={animatedProp}>
-        <Card className="projectCard-main" style={{ width: "18rem" }}>
+        <Card
+          className={`projectCard-main ${theme}`}
+          style={{ width: "18rem" }}
+        >
           <Card.Img
             className="projectCard-image"
             variant="top"

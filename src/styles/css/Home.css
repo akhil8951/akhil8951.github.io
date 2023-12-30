@@ -1,11 +1,11 @@
 .home-main {
   text-align: center;
   align-items: center;
-  height: 90vh;
+  height: 95vh;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  position: relative;
+  background-color: white;
 }
 .home-main .home-title {
   text-align: center;
@@ -33,4 +33,19 @@
   background-color: darkgrey;
   border: none;
   margin: 0.5rem;
+}
+
+.home-main.dark {
+  background-color: rgb(17, 17, 17);
+}
+.home-main.dark .home-title {
+  text-align: center;
+}
+.home-main.dark .home-title h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.home-main.dark .home-connect {
+  background-color: rgb(17, 17, 17);
 }/*# sourceMappingURL=Home.css.map */

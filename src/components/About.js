@@ -3,8 +3,10 @@ import "../styles/css/About.css";
 import { useSpring, animated } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "./ThemeContext";
 
 const About = () => {
+  const { theme } = useTheme();
   const fadeIn = useSpring({
     opacity: 1,
     transform: "translateY(0)",
@@ -13,7 +15,7 @@ const About = () => {
 
   return (
     <>
-      <Container className="about-main">
+      <Container fluid className={`about-main ${theme}`}>
         <Container className="about-title">
           <h2>About Me 🙇‍♂️</h2>
           <p>Just a quick glimpse.</p>

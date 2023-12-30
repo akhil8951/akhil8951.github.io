@@ -8,8 +8,11 @@ import {
   faInstagram,
   faLetterboxd,
 } from "@fortawesome/free-brands-svg-icons";
+import { useTheme } from "./ThemeContext";
 
 const Home = () => {
+  const { theme } = useTheme();
+
   const [text] = useTypewriter({
     words: ["Full Stack Developer 👨🏼‍💻", "Designer 🔨", "Photographer 📸"],
     loop: {},
@@ -19,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <Container fluid className="home-main">
+      <Container fluid className={`home-main ${theme}`}>
         <Container className="home-title">
           <h1>
             Hi, I'm a <span>{text}</span>

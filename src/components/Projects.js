@@ -3,8 +3,11 @@ import "../styles/css/Projects.css";
 import ProjectCard from "./ProjectCard";
 import uniCycle from "../assets/projectImage/UniCycle.jpeg";
 import trackSphere from "../assets/projectImage/TrackSphere.jpeg";
+import { useTheme } from "./ThemeContext";
 
 const Projects = () => {
+  const { theme } = useTheme();
+
   const projects = [
     {
       title: "Uni-Cycle",
@@ -25,7 +28,7 @@ const Projects = () => {
 
   return (
     <>
-      <Container className="project-main">
+      <Container fluid className={`project-main ${theme}`}>
         <Container className="project-title">
           <h2>Projects 🚀</h2>
           <p>Few of my academic work</p>

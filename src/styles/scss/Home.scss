@@ -1,30 +1,15 @@
 .home-main {
-  //   border: 0.1em solid green;
   text-align: center;
   align-items: center;
-  height: 90vh;
+  // height: 90vh;
+  height: 95vh;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  position: relative;
+  background-color: rgba($color: white, $alpha: 1);
 
   .home-title {
     text-align: center;
-
-    // .cursor {
-    //   display: inline-block;
-    //   vertical-align: middle;
-    //   width: 0.5em;
-    //   height: 1em;
-    //   background-color: #000;
-    //   animation: blink 1s infinite;
-    // }
-
-    // @keyframes blink {
-    //   50% {
-    //     opacity: 0;
-    //   }
-    // }
 
     h1 {
       font-size: 4rem;
@@ -53,5 +38,23 @@
       border: none;
       margin: 0.5rem;
     }
+  }
+}
+
+.home-main.dark {
+  background-color: rgba(17, 17, 17, 255);
+
+  .home-title {
+    text-align: center;
+
+    h1 {
+      color: white;
+      font-size: 4rem;
+      font-weight: bolder;
+    }
+  }
+
+  .home-connect {
+    background-color: rgba(17, 17, 17, 255);
   }
 }
