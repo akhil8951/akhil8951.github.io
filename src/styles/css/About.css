@@ -30,6 +30,7 @@
 .about-main.dark {
   background-color: rgb(17, 17, 17);
   padding-top: 4rem;
+  min-height: 100vh;
 }
 .about-main.dark .about-title {
   text-align: left;

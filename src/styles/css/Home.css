@@ -37,6 +37,7 @@
 
 .home-main.dark {
   background-color: rgb(17, 17, 17);
+  min-height: 100vh;
 }
 .home-main.dark .home-title {
   text-align: center;

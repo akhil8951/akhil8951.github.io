@@ -18,6 +18,7 @@
 .project-main.dark {
   background-color: rgb(17, 17, 17);
   padding-top: 4rem;
+  min-height: 100vh;
 }
 .project-main.dark .project-title h2 {
   font-weight: bolder;
