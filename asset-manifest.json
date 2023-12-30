@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.61366783.css",
-    "main.js": "/static/js/main.56cfafc9.js",
+    "main.js": "/static/js/main.d1639d6a.js",
     "static/js/787.2c1cee2b.chunk.js": "/static/js/787.2c1cee2b.chunk.js",
     "static/media/UniCycle.jpeg": "/static/media/UniCycle.0e931c87fc5c9ab7357f.jpeg",
     "static/media/TrackSphere.jpeg": "/static/media/TrackSphere.6c678c0b8f737fdb1fbe.jpeg",
+    "static/media/akhilLogo2.png": "/static/media/akhilLogo2.b9df1161a5dec8760d00.png",
+    "static/media/lightMode.png": "/static/media/lightMode.b3adfee20871a580d29f.png",
     "static/media/akhillogo.png": "/static/media/akhillogo.c1b85a9e92ff08f969cd.png",
     "index.html": "/index.html",
     "main.61366783.css.map": "/static/css/main.61366783.css.map",
-    "main.56cfafc9.js.map": "/static/js/main.56cfafc9.js.map",
+    "main.d1639d6a.js.map": "/static/js/main.d1639d6a.js.map",
     "787.2c1cee2b.chunk.js.map": "/static/js/787.2c1cee2b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61366783.css",
-    "static/js/main.56cfafc9.js"
+    "static/js/main.d1639d6a.js"
   ]
 }
