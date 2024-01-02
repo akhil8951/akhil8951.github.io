@@ -79,7 +79,7 @@ const About = () => {
                   <h5>
                     {" "}
                     Node.JS, Rest API ,Django Rest Framework, .NET Framework,
-                    AWS, SQL, MySQL, Express.JS
+                    AWS EC2, SQL, MySQL, Express.JS
                   </h5>
                 </Col>
               </Row>
