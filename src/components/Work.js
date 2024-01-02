@@ -48,18 +48,40 @@ const Work = () => {
               <p>
                 <ul>
                   <li>
-                    Revamped multi-page web app into a single-page design,
-                    enhancing performance and user engagement.
+                    Acquired proficiency in the .NET Framework while actively
+                    contributing to the ongoing enhancement of the Viewing
+                    Experience Client Application. Integrated a version display
+                    feature into the settings menu using XAML file manipulation,
+                    ensuring users have clear visibility of the application's
+                    current version.
                   </li>
                   <li>
-                    Developed a single-page app for real-time employee status
-                    tracking (WFH, WFO, Leave) on AWS. Implemented an Active
-                    Directory authentication system for enhanced security and
-                    efficiency.
+                    Converted a single-screen Multiplexer, employing a
+                    producer-consumer model to accommodate and display multiple
+                    screens. This involved intricately managing individual
+                    threads for optimal performance and responsiveness.
                   </li>
                   <li>
-                    Learned .NET framework and integrated API functionality into
-                    the Viewing Ex App.
+                    Developed “Stateo”, a Single Page Web Application, utilizing
+                    ReactJS for an intuitive and modern user interface, and DRF
+                    for robust backend APIs. Database management was executed
+                    efficiently using MSSQL, ensuring data integrity
+                  </li>
+                  <li>
+                    "Stateo" enables employees to seamlessly track their daily
+                    and advance status (WFH, WFO, Leave), significantly
+                    improving team efficiency, communication, and overall
+                    performance. The application was deployed on AWS EC2. To
+                    enhance security, a role-based signup and login system with
+                    integrated Active Directory authentication was implemented.
+                    Was recognized for reshaping workplace dynamics and
+                    fostering positive team collaboration
+                  </li>
+                  <li>
+                    <strong>
+                      Achievement - Secured second prize in the
+                      organization-wide held Hackathon called CPL
+                    </strong>
                   </li>
                 </ul>
               </p>
@@ -86,14 +108,21 @@ const Work = () => {
               <p>
                 <ul>
                   <li>
-                    Utilized problem-solving skills to develop end-to-end
-                    websites with HTML, JavaScript, React.js, and Django Rest
-                    framework. Hosted on AWS EC2, optimized components for
-                    enhanced performance.
+                    Worked on application to re-architect a multi page web-app
+                    to single page web-app, boosting performance and engagement
                   </li>
                   <li>
-                    Developed RESTful API for user authentication and dynamic
-                    data serving to JavaScript frontend.
+                    Spearheaded the design initiative for the organization's
+                    team structure, playing a pivotal role in shaping the
+                    Company's landing page, ensuring a compelling and effective
+                    online presence.
+                  </li>
+                  <li>
+                    Designed and implemented NodeJS APIs dedicated to retrieving
+                    data from the database for critical sections, specifically
+                    the Careers page and Platform Engineering page of the
+                    company's website. This initiative streamlined data access,
+                    contributing to an enhanced and efficient user experience.
                   </li>
                 </ul>
               </p>
